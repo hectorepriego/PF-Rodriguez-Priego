@@ -1,0 +1,247 @@
+/* reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body{
+    background-color: #E8F9FD;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+
+/* estilos del Header*/
+
+header{
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+    column-gap: 5px;
+    
+}
+
+.header-perfil nav ul li{
+    list-style: none;
+    background-color: #79DAE8;
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px; 
+}
+
+.header-perfil nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* estilos de main*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main h1{
+    text-align: center;
+    margin: 0.5rem;
+    
+}
+
+.main-perfil img{
+    left: auto;
+    height: 300px;
+    border-radius:160px;
+    border:10px solid #79DAE8;
+    margin: 2rem;
+}
+
+main h1 span{
+    display: block;
+    
+}
+
+main div h2{
+    text-align: center;
+    background-color: #0AA1DD;
+}
+
+main div p{
+    text-align: center;
+    margin: 1rem;
+}
+
+.informacion{
+    display: none;
+}
+
+/* estilos de footer*/
+footer h4{
+        text-align: center  ;
+        background-color: #0AA1DD;
+    }
+
+/* imagenes del footer*/
+footer img{
+    display: none;
+} 
+
+
+
+/* media queries*/
+
+@media screen and (min-width:600px)
+{
+
+    main{
+        height: 86.3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .main-experiencia{
+        height:130vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .main-educacion{
+        height:130vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .main-proyecto{
+        height:130vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    header{
+        display: block;
+        display: flex;   
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #0AA1DD;
+        padding: 0.8rem;
+        
+    }
+
+    footer{
+        display: flex;   
+        justify-content: center;
+        align-items: center;
+        background-color: #0AA1DD;
+    }
+
+    .informacion{
+        display: block;
+    }
+
+    main h1 span{
+        display: inline;
+    }
+
+    header nav ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem
+        ;
+    }
+
+    /* estilos nuevos del main*/
+    main{
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(2fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "h1 h1"
+        "h2-p h2-p"
+        "img p"
+        "img h2"
+        "img informacion";
+        justify-content: center;
+        justify-items: center;
+    }
+
+    /*Estilos del "Acerca de mi"*/
+
+    main h1{
+        grid-area: h1;
+    }
+
+    main .h2-perfil{
+        grid-area: h2-p;
+        text-align: center;
+    }
+    
+    main img{
+        grid-area: img;
+    }
+
+    main p{
+        grid-area: p;
+        margin: 2rem;
+    }
+
+    main .h2-acerca{
+        grid-area: h2;
+        margin: 2rem;
+    }
+
+    main .informacion{
+        grid-area: informacion;
+        margin: 4rem;
+    }
+
+    footer{
+        padding: 0.8rem;
+    }
+
+        /*Estilos de " Experiencia"*/
+        .main-experiencia{
+            padding: 0.5rem;
+            display: grid;
+            grid-template-columns: repeat(2fr);
+            grid-template-rows:  auto;
+            grid-template-areas: 
+            "h2-experiencia"
+            "div"
+            "footer-experiencia";
+        } 
+
+        .footer-experiencia{
+            display: flex;   
+            justify-content: center;
+            align-items: center;
+            background-color: #0AA1DD;
+        }
+
+        /*Estilos de " Educacion"*/
+        .main-educacion{
+            padding: 0.5rem;
+            display: grid;
+            grid-template-columns: repeat(2fr);
+            grid-template-rows:  auto;
+            grid-template-areas: 
+            "h2-experiencia"
+            "div"
+            "footer-experiencia";
+        } 
+}
+
