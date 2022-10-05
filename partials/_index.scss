@@ -1,0 +1,158 @@
+ /* Estructura del index*/
+ .contenedor{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns:  repeat(2fr) ;
+    grid-template-areas: 
+    "navegacion navegacion navegacion"
+    "nombre nombre nombre"
+    "img perfil perfil"
+    "footer footer footer";
+
+    .perfil{
+        height: 86.3vh;}
+
+    .informacion-principal{
+        grid-area: nombre;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            padding: 1rem;
+        }
+
+        h2{
+            padding: 0.5rem;
+        }
+    }
+
+    .div-perfil{
+            grid-area: perfil;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+
+            .img{
+                grid-area: img;
+                border-radius:160px;
+                border:10px solid $secondary-color;
+                margin: 0.5rem;
+                
+            }
+
+                .informacion{
+                    margin: 0.5rem;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    padding-inline: 5rem;
+                    padding-top: 2rem;
+
+                }
+
+                .h2-acerca{
+                    margin: 0.5rem;
+                    text-align: center;
+                    padding-top: 4rem;
+                }
+
+                .p-informacion{
+                    margin: 0.5rem;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    padding-inline: 5rem;
+                }
+        }
+}   
+
+/* Media Querys*/
+/* Formato Tablet */
+@media (max-width: 820px) and (min-width: 659px){
+    body{
+        background-color: $primary-color;
+
+        .contenedor .navegacion{
+            background-color: $tertiary-color;
+            grid-area: navegacion;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .contenedor .perfil{
+            height: auto;
+        }
+
+        .contenedor .perfil {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            
+            .informacion{
+                padding-inline: 0.1rem;
+
+            }
+
+            .h2-acerca{
+                padding-top: 0.1rem;
+            }
+
+            .p-informacion{
+                padding-inline: 0.1rem;
+            }
+            .informacion-principal{
+                h1{
+                    text-align: center;
+                    margin: 0.5rem;
+                        span{
+                        display: block;
+                    }  
+                }
+            } 
+        }
+    }
+}
+
+/* Formato mobile */
+@media screen and (max-width: 658px) and (min-width: 428px){
+    body{
+        background-color: $primary-color;
+
+        .contenedor .navegacion{
+            display: none;
+        }
+
+        .contenedor .perfil{
+            height: auto;
+        }
+
+        .contenedor .perfil {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .div-perfil{
+                grid-area: perfil;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .informacion-principal{
+                h1{
+                    text-align: center;
+                    margin: 0.5rem;
+                        span{
+                        display: block;
+                    }  
+                }
+            } 
+            
+            .h2-acerca, .p-informacion{
+                display: none;
+            }
+        }
+    }
+}

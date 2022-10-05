@@ -1,0 +1,23 @@
+ // partials de Sass //
+
+ @import "partials/reset";
+ @import "partials/color-palet";
+ @import "partials/mixin-barras";
+ @import "partials/index";
+ @import "partials/experiencia";
+ @import "partials/educacion";
+ @import "partials/proyectos";
+ @import "partials/contacto";
+
+
+/* Menu de navegacion General*/
+.navegacion{
+    @include header;
+    @include nav-navegacion;
+    }
+
+/* Menu de Footer General */
+    footer{
+        @include footer;
+        @include barra-footer;
+    }

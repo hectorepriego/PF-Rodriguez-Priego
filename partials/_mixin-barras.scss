@@ -1,0 +1,59 @@
+
+// estilos generales de la barra de navegacion //
+
+@mixin header{
+    background-color: $tertiary-color;
+    grid-area: navegacion;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@mixin nav-navegacion{
+    nav{
+        ul{
+            display: flex;
+            list-style: none;
+
+            li{
+                margin: 0.5rem;
+                padding: 5px;
+                font-size: 1rem;
+                background-color: $secondary-color;
+                border-radius: 50px;
+                box-shadow: 2px 2px 5px;
+                
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }    
+}
+
+
+// estilos generales del footer //
+
+@mixin footer{
+    grid-area: footer;
+    display: flex; 
+    flex-direction: column;
+    background-color: $tertiary-color;
+}
+
+@mixin barra-footer {
+    div{
+        display: flex;
+        flex-direction: row;
+        padding: 0.2rem;
+        justify-content: center;
+
+        img{
+            margin:0 3px;
+        }
+    }
+    h4{
+        text-align: center;
+    }   
+}

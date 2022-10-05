@@ -1,0 +1,22 @@
+
+%card {
+    background-color: $quinary-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.3rem;
+    width: 750px;
+    margin: 1rem;
+    box-shadow: 1px 1px 10px;
+
+    img{
+    align-items: center;
+    margin: 12px;
+    }
+
+    p{
+    text-align: center;
+    }
+}

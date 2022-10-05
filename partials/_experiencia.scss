@@ -1,0 +1,100 @@
+@import "partials/extend-card";
+ 
+ /* Estructura de experiencia*/
+ .contenedor-experiencia{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns:  repeat(2fr) ;
+    grid-template-areas: 
+    "navegacion navegacion navegacion"
+    "t-experiencia t-experiencia t-experiencia "
+    "c-experiencia c-experiencia c-experiencia"
+    "footer footer footer";
+
+    .main-experiencia{
+            grid-area: t-experiencia;
+        h1{
+            text-align: center;
+            font-size: 2rem;
+            margin: 0.5rem;
+        }
+    }
+
+    .div-experiencia{
+        grid-area: c-experiencia;
+        
+        .section-experiencia{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            div{
+                @extend %card;
+            }
+        }
+    }
+}
+
+/* Media Querys*/
+/* Formato Tablet */
+@media (max-width: 820px) and (min-width: 659px){
+    body{
+        background-color: $primary-color;
+
+        .contenedor-experiencia .div-experiencia .section-experiencia .card{
+            background-color: $quinary-color;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1.3rem;
+            width: 600px;
+            margin: 1rem;
+            box-shadow: 1px 1px 10px;
+
+            img{
+            align-items: center;
+            margin: 12px;
+            }
+
+            p{
+            text-align: center;
+            }
+        }
+    }
+}
+
+/* Formato mobile */
+@media screen and (max-width: 658px) and (min-width: 428px){
+    body{
+        background-color: $primary-color;
+
+        .contenedor-experiencia .navegacion{
+            display: none;
+        }
+
+        .contenedor-experiencia .div-experiencia .section-experiencia .card{
+            background-color: $quinary-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1.3rem;
+            width: 400px;
+            margin: 1rem;
+            box-shadow: 1px 1px 10px;
+
+            img{
+            align-items: center;
+            margin: 12px;
+            }
+
+            p{
+            text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+ /* Estructura de contacto*/
+ .contenedor-contacto{
+    grid-template-rows: auto;
+    grid-template-columns:  repeat(2fr) ;
+    grid-template-areas: 
+    "navegacion navegacion navegacion"
+    "main-contacto main-contacto main-contacto"
+    "footer footer footer";
+
+    .main-contacto{
+            height: 86.3vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            h2{
+                text-align: center;
+                font-size: 30px;
+                margin: 1rem;
+            }
+
+        section{
+                margin: 5px;
+                padding: 20px;
+
+            form{
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0.5rem;
+                    margin: 10px;
+
+                        input{
+                        padding: 0.5rem;
+                        margin: 3px;
+                        }
+                }
+            }
+        }
+    }
+ }
+
+/* Media Querys*/
+/* Formato Tablet */
+@media (max-width: 820px) and (min-width: 659px){
+    body{
+        background-color: $primary-color;
+
+        .contenedor-contacto .main-contacto{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            h2{
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+/* Formato mobile */
+@media screen and (max-width: 658px) and (min-width: 428px){
+    body{
+        background-color: $primary-color;
+
+        .contenedor-contacto .navegacion{
+            display: none;
+        }
+
+        .contenedor-contacto .main-contacto{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            h2{
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    }
+}
