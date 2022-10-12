@@ -72,10 +72,13 @@
     body{
         background-color: $primary-color;
 
-        .contenedor-proyectos .navegacion{
-            display: none;
+        .contenedor-proyectos{
+            display:contents;
         }
 
+        .navegacion-proyectos{
+            @include header-mobile 
+        }
 
         .contenedor-proyectos .main-proyectos{
                 height: auto;

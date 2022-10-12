@@ -32,6 +32,13 @@
     }    
 }
 
+@mixin header-mobile{
+    background-color: $tertiary-color;
+    grid-area: navegacion;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 // estilos generales del footer //
 

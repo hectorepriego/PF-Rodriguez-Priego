@@ -70,8 +70,12 @@
     body{
         background-color: $primary-color;
 
-        .contenedor-contacto .navegacion{
-            display: none;
+        .contenedor-contacto{
+            display:contents;
+        }
+
+        .navegacion-contacto{
+            @include header-mobile 
         }
 
         .contenedor-contacto .main-contacto{

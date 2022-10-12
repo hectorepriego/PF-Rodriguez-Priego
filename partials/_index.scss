@@ -1,3 +1,5 @@
+@import "../partials/mixin-barras";
+ 
  /* Estructura del index*/
  .contenedor{
     display: grid;
@@ -120,8 +122,12 @@
     body{
         background-color: $primary-color;
 
-        .contenedor .navegacion{
-            display: none;
+        .contenedor{
+            display:contents;
+        }
+
+        .navegacion{
+            @include header-mobile 
         }
 
         .contenedor .perfil{

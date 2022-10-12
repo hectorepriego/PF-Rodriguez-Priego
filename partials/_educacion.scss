@@ -71,8 +71,12 @@
     body{
         background-color: $primary-color;
 
-        .contenedor-educacion .navegacion{
-            display: none;
+        .contenedor-educacion{
+            display:contents;
+        }
+
+        .navegacion-educacion{
+            @include header-mobile 
         }
 
         .contenedor-educacion .div-educacion .section-educacion .card{

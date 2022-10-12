@@ -84,8 +84,14 @@ body {
 @media screen and (max-width: 658px) and (min-width: 428px) {
   body {
     background-color: #E8F9FD; }
-    body .contenedor .navegacion {
-      display: none; }
+    body .contenedor {
+      display: contents; }
+    body .navegacion {
+      background-color: #0AA1DD;
+      grid-area: navegacion;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
     body .contenedor .perfil {
       height: auto; }
     body .contenedor .perfil {
@@ -168,8 +174,14 @@ body {
 @media screen and (max-width: 658px) and (min-width: 428px) {
   body {
     background-color: #E8F9FD; }
-    body .contenedor-experiencia .navegacion {
-      display: none; }
+    body .contenedor-experiencia {
+      display: contents; }
+    body .navegacion-experiencia {
+      background-color: #0AA1DD;
+      grid-area: navegacion;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
     body .contenedor-experiencia .div-experiencia .section-experiencia .card {
       background-color: #c8f2f7;
       display: flex;
@@ -250,8 +262,14 @@ body {
 @media screen and (max-width: 658px) and (min-width: 428px) {
   body {
     background-color: #E8F9FD; }
-    body .contenedor-educacion .navegacion {
-      display: none; }
+    body .contenedor-educacion {
+      display: contents; }
+    body .navegacion-educacion {
+      background-color: #0AA1DD;
+      grid-area: navegacion;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
     body .contenedor-educacion .div-educacion .section-educacion .card {
       background-color: #c8f2f7;
       display: flex;
@@ -333,8 +351,14 @@ body {
 @media screen and (max-width: 658px) and (min-width: 428px) {
   body {
     background-color: #E8F9FD; }
-    body .contenedor-proyectos .navegacion {
-      display: none; }
+    body .contenedor-proyectos {
+      display: contents; }
+    body .navegacion-proyectos {
+      background-color: #0AA1DD;
+      grid-area: navegacion;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
     body .contenedor-proyectos .main-proyectos {
       height: auto; }
     body .contenedor-proyectos .div-proyectos .section-proyectos .card {
@@ -402,8 +426,14 @@ body {
 @media screen and (max-width: 658px) and (min-width: 428px) {
   body {
     background-color: #E8F9FD; }
-    body .contenedor-contacto .navegacion {
-      display: none; }
+    body .contenedor-contacto {
+      display: contents; }
+    body .navegacion-contacto {
+      background-color: #0AA1DD;
+      grid-area: navegacion;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
     body .contenedor-contacto .main-contacto {
       height: auto;
       display: flex;

@@ -71,8 +71,12 @@
     body{
         background-color: $primary-color;
 
-        .contenedor-experiencia .navegacion{
-            display: none;
+        .contenedor-experiencia{
+            display:contents;
+        }
+
+        .navegacion-experiencia{
+            @include header-mobile 
         }
 
         .contenedor-experiencia .div-experiencia .section-experiencia .card{
